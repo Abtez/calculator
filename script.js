@@ -2,11 +2,16 @@ const btns= document.querySelectorAll(".btn");
 const screen=document.querySelector(".screen");
 const equalBtn= document.querySelector(".btn-equal");
 const clearBtn= document.querySelector(".btn-clear");
+/*const operatorBtn= document.querySelector("#operator");
+
+operatorBtn.addEventListener("click", function(){
+
+})*/
 
 for(let i=0;i<btns.length;i++){
     btns[i].addEventListener("click", function(){
         let number=btns[i].getAttribute("data-num");
-        screen.value =+ number
+        screen.value += number;
     })
 }
 
